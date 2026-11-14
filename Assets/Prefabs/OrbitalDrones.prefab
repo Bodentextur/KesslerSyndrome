@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3461615516583528385
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 199895185490969564}
+  - component: {fileID: 5939395460923208247}
+  m_Layer: 0
+  m_Name: OrbitalDrones
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &199895185490969564
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3461615516583528385}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5939395460923208247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3461615516583528385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3452be4d0fefd324ca4d6673827002d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::OrbitalDrones
+  weaponName: Orbital Drones
+  description: 2 Drones that circle around you, dealing damage to debris.
+  icon: {fileID: -9121343847822592868, guid: d15650162ae96374a86c96791045005d, type: 3}
+  baseDamage: 8
+  baseCooldown: 0.25
+  baseRange: 4
+  damageGainPerLevel: 4
+  cooldownReductionPerLevel: 0.08
+  minCooldown: 0.1
+  level: 1
+  maxLevel: 8
+  targetLayers:
+    serializedVersion: 2
+    m_Bits: 16384
+  dronePrefab: {fileID: 8076275492744601883, guid: 7b6dd01c61ce1584e855feb87731c0f4, type: 3}
+  startDrones: 2
+  maxDrones: 5
+  orbitRadius: 1.5
+  radiusGainPerLevel: 0.15
+  rotationSpeed: 120
+  speedGainPerLevel: 12

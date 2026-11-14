@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7126059347234476180
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6286304571729419399}
+  - component: {fileID: 2131084615314816421}
+  m_Layer: 0
+  m_Name: PulseLaser
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6286304571729419399
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7126059347234476180}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2131084615314816421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7126059347234476180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27a7804b0f415064b89e1c4890d6de5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PulseLaser
+  weaponName: Pulse Laser
+  description: Laser that fires periodically and directly targets debris
+  icon: {fileID: 1380014096762435831, guid: 8cdd6bfdf09f5fe419e41f6d8c59af87, type: 3}
+  baseDamage: 10
+  baseCooldown: 0.6
+  baseRange: 6
+  damageGainPerLevel: 0.25
+  cooldownReductionPerLevel: 0.08
+  minCooldown: 0.1
+  level: 1
+  maxLevel: 8
+  targetLayers:
+    serializedVersion: 2
+    m_Bits: 16384
+  projectilePrefab: {fileID: 2159378588775836754, guid: 3ff9953675510ac4980f600c98f4a2a7, type: 3}
+  projectileSpeed: 18
+  projectileLifetime: 1.5
+  spreadAngle: 12
+  shootSfx: {fileID: 8300000, guid: 1adcc94057482224cbecf9d5731a2166, type: 3}
+  sfxVolume: 0.075
